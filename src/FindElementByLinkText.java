@@ -14,10 +14,12 @@ public class FindElementByLinkText {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         String baseURL = "https://letskodeit.teachable.com/";
         driver.get(baseURL);
+
         //find element by link text ( basically link name shown on the website. such as button name)
         driver .findElement(By.linkText("Login")).click();
+
         // find element by Partial link text
-        driver.findElement(By.partialLinkText("Pract")).click();
+        driver.findElement(By.xpath("Pract")).click();
 
     }
 }
