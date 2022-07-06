@@ -6,7 +6,7 @@ public class FindElementByTagName {
 
     public static void main(String[] args) {
 
-        // not videly use because there is many same named tag names.like anchor tag, div tag etc.
+        // not widely use because there is many same named tag names.like anchor tag, div tag etc.
 
         System.setProperty("webdriver.edge.driver","/Users/alikiyancicek/Dev/WebDrivers/msedgedriver");
         WebDriver driver = new EdgeDriver();
