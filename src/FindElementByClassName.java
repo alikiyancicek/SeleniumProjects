@@ -12,11 +12,12 @@ public class FindElementByClassName {
 
         System.setProperty("webdriver.edge.driver","/Users/alikiyancicek/Dev/WebDrivers/msedgedriver");
         WebDriver driver = new EdgeDriver();
-        String baseURL = "https://facebook.com";
+        String baseURL = "https  ://facebook.com";
         driver.get(baseURL);
 
         // this classname has 2 diffirent similar class name with other web elements on the page.
         // it is better to use xpath or css selector instead.
+        //following line of code worked but needs to convert css selector or xpath for better results.
         driver.findElement(By.className("inputtext")).sendKeys("Automation");
 
     }
