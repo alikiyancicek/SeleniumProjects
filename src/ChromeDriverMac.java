@@ -1,7 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.util.concurrent.TimeUnit;
 
 
@@ -9,11 +8,10 @@ public class ChromeDriverMac {
 
     public static void main(String[] args) {
 
-
-        // if we copy drivers into the /usr/local/bin directory, we do not have to write line 14.
+        // if we copy drivers into the /usr/local/bin directory, we do not have to write line 16.
         // if the driver changed, we need to copy and paste new driver for this location.
 
-        // specifying location of driver into our local machine
+        // specifying location of driver in our local machine
         System.setProperty("webdriver.chrome.driver","/Users/alikiyancicek/Dev/WebDrivers/chromedriver");
 
         // initialization of new chromedriver
@@ -37,8 +35,10 @@ public class ChromeDriverMac {
         driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("ali@gmail.com");
 
         // send password information via the same method
-        driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("123456");
+        driver.findElement(By.name("password")).sendKeys("123456");
 
-        //*[@id="password"]
+        //find element and click it. - this element was log in button.
+        driver.findElement(By.xpath("/html/body/main/div/form/div[4]/input")).click();
+
     }
 }
