@@ -26,7 +26,8 @@ public class ChromeUsingCSSSelector {
         //driver.findElement(By.id("input[id=\"email\"]")).click();
 
         //class
-        driver.findElement(By.className(".btn-primary")).click();
+        // this code needs to modify
+        driver.findElement(By.className("input[class='btn-primary']")).click();
 
     }
 }
