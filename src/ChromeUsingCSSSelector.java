@@ -18,7 +18,7 @@ public class ChromeUsingCSSSelector {
     // initialization of new chromedriver
         WebDriver driver = new ChromeDriver();
     // specifying the url that we wanted to open
-        String baseURL = "https://sso.teachable.com/secure/42299/identity/login/password?wizard_id=EnETuaXBo9lK8pp7V10nbtwvmWiN0LXwYDEC2Lupsn__vsrCwxEsTxFm1D-zA6v7RcusX3QhEFv_9smt3kwvNA";
+        String baseURL = "https://courses.letskodeit.com/practice";
     // maximize webpage maximum size
         driver.manage().window().maximize();
     //implicit wait
@@ -30,9 +30,8 @@ public class ChromeUsingCSSSelector {
         // . means class selector for css
         //driver.findElement(By.id("input[id=\"email\"]")).click();
 
-        //class
-        // this code needs to modify
-        driver.findElement(By.className("input[class='btn-primary']")).click();
+        // finds element by css selector and writes 123 inside
+        driver.findElement(By.cssSelector("input[id='displayed-text']")).sendKeys("123");
 
     }
 }
