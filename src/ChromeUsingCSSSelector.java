@@ -30,8 +30,10 @@ public class ChromeUsingCSSSelector {
         // . means class selector for css
         //driver.findElement(By.id("input[id=\"email\"]")).click();
 
-        // finds element by css selector and writes 123 inside
+        // finds element by css selector with id and writes text inside
         driver.findElement(By.cssSelector("input[id='displayed-text']")).sendKeys("123");
 
+        //  finds element by css selector with classname and writes text inside
+        driver.findElement(By.cssSelector("input[class='inputs displayed-class']")).sendKeys("12345");
     }
 }
