@@ -6,6 +6,11 @@ import java.util.concurrent.TimeUnit;
 
 public class ChromeUsingCSSSelector {
     public static void main(String[]args){
+
+        // syntax for css selector tag[attribute='value']
+        //example for CSSid selector--->input[id=displayed-text]
+        //example for css class selector --->input[class=displayed-test]
+
     // if we copy drivers into the /usr/local/bin directory, we do not have to write line 16.
     // if the driver changed, we need to copy and paste new driver for this location.
     // specifying location of driver in our local machine
